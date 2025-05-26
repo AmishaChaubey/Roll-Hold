@@ -34,7 +34,9 @@
 
 ## 📸 Screenshot
 
-![Dice Dash Screenshot](./screenshot.png)
+![Dice Dash Screenshot]
+
+<img src="Screenshot 2025-05-27 022704.png"/>
 
 ---
 
