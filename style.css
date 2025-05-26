@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Fredoka One", cursive;
+  background-color: #F5EEE6;
+  color: #5C3D2E;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* MAIN CONTAINER */
+main {
+  width: 90rem;
+  height: 55rem;
+  background: #FFF8DC;
+  border-radius: 2rem;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  overflow: hidden;
+  border: 6px solid #F3D7CA;
+}
+
+/* PLAYER PANELS */
+.player {
+  flex: 1;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFF8DC;
+  transition: all 0.5s;
+  color: #5C3D2E;
+}
+
+.player:last-child {
+  border-left: 3px dashed #F3D7CA;
+}
+
+/* NAMES AND SCORES */
+.name {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #E6A4B4;
+  margin-bottom: 1rem;
+}
+
+.score {
+  font-size: 8rem;
+  color: #D96C8D;
+}
+
+/* CURRENT BOX */
+.current {
+  background: #F3D7CA;
+  color: #5C3D2E;
+  padding: 2rem;
+  width: 70%;
+  border-radius: 2rem;
+  box-shadow: inset 0 0 10px #FFF8DC;
+  text-align: center;
+}
+
+.current-label {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #7B5240;
+}
+
+.current-score {
+  font-size: 4rem;
+}
+
+/* ACTIVE PLAYER */
+.player-active {
+  background: #E6A4B4;
+}
+
+.player-active .name {
+  color: #FFF8DC;
+}
+
+.player-active .current {
+  background: #FFF8DC;
+  color: #5C3D2E;
+}
+
+/* WINNER */
+.player-winner {
+  background-color: #F3D7CA;
+}
+
+.player-winner .name {
+  color: #D96C8D;
+}
+
+/* BUTTONS */
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #E6A4B4;
+  border: 4px solid #F3D7CA;
+  color: #fff;
+  font-size: 2rem;
+  font-family: "Fredoka One", cursive;
+  padding: 1rem 3rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 0.5rem 0 #D96C8D;
+}
+
+.btn:hover {
+  background-color: #F3D7CA;
+  box-shadow: 0 0.7rem 0 #D96C8D;
+}
+
+.btn:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 0.3rem 0 #D96C8D;
+}
+
+.btn-new {
+  top: 3rem;
+}
+.btn-roll {
+  top: 39rem;
+}
+.btn-hold {
+  top: 46rem;
+}
+
+/* DICE */
+.dice {
+  position: absolute;
+  top: 18rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 12rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+}
+
+/* HIDDEN */
+.hidden {
+  display: none;
+}
