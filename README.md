@@ -37,11 +37,3 @@
 ![Dice Dash Screenshot]
 
 <img src="Screenshot 2025-05-27 022704.png"/>
-
----
-
-## 📁 Setup Instructions
-
-1. Clone this repo:
-   ```bash
-   git clone https://github.com/your-username/dice-dash.git
